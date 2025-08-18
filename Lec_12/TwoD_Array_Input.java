@@ -1,0 +1,29 @@
+package Lec_12;
+
+import java.util.Scanner;
+
+public class TwoD_Array_Input {
+
+	public static void main(String[] args) {
+		Scanner sc =new Scanner(System.in);//371
+		int n = sc.nextInt();
+		int m = sc.nextInt();
+		int[][] arr = new int [n][m];
+		for(int i=0;i<n;i++) {
+			for(int j=0;j<m;j++) {
+				arr[i][j]=sc.nextInt();
+			}
+		}
+		display(arr);
+			}
+	public static void display(int[][] arr) {
+		
+		for(int i=0;i<arr.length;i++) {
+			for(int j=0;j<arr[0].length; j++) {
+				System.out.print(arr[i][j] + " ");
+			}System.out.println();
+		}
+
+	}
+
+}
